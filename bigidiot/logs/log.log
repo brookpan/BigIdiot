@@ -1,0 +1,10 @@
+2018-03-08 00:01:53 [ com.brpan.bigidiot.App.main():0 ] - [ DEBUG ] debug message
+2018-03-08 00:01:53 [ com.brpan.bigidiot.App.main():5 ] - [ INFO ] info message
+2018-03-08 00:01:53 [ com.brpan.bigidiot.App.main():20 ] - [ WARN ] warn message
+2018-03-08 00:01:53 [ com.brpan.bigidiot.App.main():25 ] - [ ERROR ] error message
+2018-03-08 00:01:53 [ com.brpan.bigidiot.App.main():28 ] - [ FATAL ] fatal message
+2018-03-08 01:00:41 [ main:0 ] - [ DEBUG ] debug message
+2018-03-08 01:00:41 [ main:1 ] - [ INFO ] info message
+2018-03-08 01:00:41 [ main:3 ] - [ WARN ] warn message
+2018-03-08 01:00:41 [ main:3 ] - [ ERROR ] error message
+2018-03-08 01:00:41 [ main:4 ] - [ FATAL ] fatal message

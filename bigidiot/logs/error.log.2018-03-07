@@ -1,0 +1,14 @@
+2018-03-07 21:13:35 [ com.brpan.bigidiot.App.main():14 ] - [ ERROR ] error message
+2018-03-07 21:13:35 [ com.brpan.bigidiot.App.main():17 ] - [ FATAL ] fatal message
+2018-03-07 21:47:29 [ com.brpan.bigidiot.App.main():7 ] - [ ERROR ] error message
+2018-03-07 21:47:29 [ com.brpan.bigidiot.App.main():8 ] - [ FATAL ] fatal message
+2018-03-07 21:53:09 [ com.brpan.bigidiot.App.main():4 ] - [ ERROR ] error message
+2018-03-07 21:53:09 [ com.brpan.bigidiot.App.main():5 ] - [ FATAL ] fatal message
+2018-03-07 21:55:30 [ com.brpan.bigidiot.App.main():10 ] - [ ERROR ] error message
+2018-03-07 21:55:30 [ com.brpan.bigidiot.App.main():10 ] - [ FATAL ] fatal message
+2018-03-07 21:58:08 [ com.brpan.bigidiot.App.main():11 ] - [ ERROR ] error message
+2018-03-07 21:58:08 [ com.brpan.bigidiot.App.main():11 ] - [ FATAL ] fatal message
+2018-03-07 21:59:29 [ com.brpan.bigidiot.App.main():3 ] - [ ERROR ] error message
+2018-03-07 21:59:29 [ com.brpan.bigidiot.App.main():3 ] - [ FATAL ] fatal message
+2018-03-07 23:33:18 [ com.brpan.bigidiot.App.main():5 ] - [ ERROR ] error message
+2018-03-07 23:33:18 [ com.brpan.bigidiot.App.main():9 ] - [ FATAL ] fatal message
