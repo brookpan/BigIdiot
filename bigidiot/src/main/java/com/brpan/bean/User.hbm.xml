@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+		
+<hibernate-mapping package="com.brpan.bean">
+
+    <class name="com.brpan.bean.User" table="T_USER">
+        <!-- key -->
+        <id name="user_id" column="USER_ID" type='java.lang.Integer'>
+        <!-- incremental -->
+            <generator class="native"/>
+        </id>
+        <property name="user_name" column="USER_NAME" type="java.lang.String" not-null="false"/>
+        <property name="user_nick" column="USER_NICK" type="java.lang.String" not-null="false"/>
+        <property name="user_pwd" column="USER_PWD" type="java.lang.String" not-null="false"/>
+		<property name="user_type_id" column="USER_TYPE_ID" type="java.lang.Integer" not-null="false"/>
+		<property name="user_image" column="USER_IMAGE" type="java.lang.String" not-null="false"/>
+		<property name="user_status" column="USER_STATUS" type="java.lang.Integer" not-null="false"/>
+    </class>  
+  
+</hibernate-mapping>

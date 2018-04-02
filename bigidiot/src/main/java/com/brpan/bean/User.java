@@ -1,6 +1,6 @@
 package com.brpan.bean;
 
-class User {
+public class User {
 	
 	private Integer user_id;
 	private String user_name;
