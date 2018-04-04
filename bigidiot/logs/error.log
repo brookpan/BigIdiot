@@ -1,4 +1,12 @@
-2018-03-08 00:01:53 [ com.brpan.bigidiot.App.main():25 ] - [ ERROR ] error message
-2018-03-08 00:01:53 [ com.brpan.bigidiot.App.main():28 ] - [ FATAL ] fatal message
-2018-03-08 01:00:41 [ main:3 ] - [ ERROR ] error message
-2018-03-08 01:00:41 [ main:4 ] - [ FATAL ] fatal message
+2018-04-01 20:12:41 [ com.brpan.bigidiot.App.main():6 ] - [ ERROR ] error message
+2018-04-01 20:12:41 [ com.brpan.bigidiot.App.main():6 ] - [ FATAL ] fatal message
+2018-04-01 20:59:58 [ main:4928 ] - [ ERROR ] HHH000123: IllegalArgumentException in class: com.brpan.bean.User, setter method of property: user_status
+2018-04-01 20:59:58 [ main:4941 ] - [ ERROR ] HHH000091: Expected type: java.lang.Integer, actual value: java.lang.String
+2018-04-01 21:07:10 [ main:3848 ] - [ ERROR ] HHH000123: IllegalArgumentException in class: com.brpan.bean.User, setter method of property: user_status
+2018-04-01 21:07:10 [ main:3849 ] - [ ERROR ] HHH000091: Expected type: java.lang.Integer, actual value: java.lang.String
+2018-04-01 21:11:15 [ main:5148 ] - [ ERROR ] User ID: 10001
+2018-04-01 21:11:15 [ main:5151 ] - [ ERROR ]   User Name: brook.pan
+2018-04-01 21:12:01 [ main:5579 ] - [ ERROR ] User ID: 10001
+2018-04-01 21:12:01 [ main:5681 ] - [ ERROR ]   User Name: brook.pan
+2018-04-01 21:13:16 [ main:4900 ] - [ ERROR ] User ID: 10001
+2018-04-01 21:13:16 [ main:4902 ] - [ ERROR ]   User Name: brook.pan
