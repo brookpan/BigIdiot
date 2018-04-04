@@ -14,7 +14,8 @@
       	 <property name="hibernate.format_sql">true</property> 
          
          <!--Entity Mapping -->
-         <mapping resource="com/brpan/bean/User.hbm.xml" />
+         <mapping class="com.brpan.bean.User"/>
+         <!-- <mapping resource="com/brpan/bean/User.hbm.xml" />  -->
           
        </session-factory>
        

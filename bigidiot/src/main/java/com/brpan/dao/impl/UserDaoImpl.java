@@ -1,7 +1,6 @@
 package com.brpan.dao.impl;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import org.apache.commons.logging.Log;
@@ -33,26 +32,15 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	@Override
-	public ArrayList<User> ListAllUsers() {
+	public List<User> ListAllUsers() {
 		// TODO Auto-generated method stub
 		
-		ArrayList<User> rtusers = new ArrayList<User>();
+		List<User> rtusers = new ArrayList<User>();
 		
 	      Transaction tx = null;
 	      try{
 	         tx = session.beginTransaction();
-	         List users = session.createQuery("FROM User").list(); 
-	         for (Iterator iterator = 
-	        		 users.iterator(); iterator.hasNext();){
-	            User user = (User) iterator.next();
-	            
-	            rtusers.add(user);
-	            
-	            logger.error("User ID: " + user.getUser_id());
-	            logger.error("  User Name: " + user.getUser_name()); 
-	            
-	            System.out.println("User ID: " + user.getUser_id());
-	         }
+	         rtusers =session.createQuery("FROM User").list();
 	         tx.commit();
 	      }catch (HibernateException e) {
 	         if (tx!=null) tx.rollback();
@@ -66,8 +54,14 @@ public class UserDaoImpl implements UserDao {
 	
 	public static void main(String[] args) {
 		UserDaoImpl ud = new UserDaoImpl();
-		ArrayList<User> user_list = ud.ListAllUsers();
-		System.out.print(user_list.size());
+		List<User> userlist = ud.ListAllUsers();
+		
+		for(User user:userlist){
+			
+			System.out.println("User ID: "+user.getUser_id());
+			System.out.println("User Name: "+user.getUser_name());
+		}
+		
 	}
 
 }

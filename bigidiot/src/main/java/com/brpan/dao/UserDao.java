@@ -1,13 +1,14 @@
 package com.brpan.dao;
 
-import java.util.ArrayList;
+import java.util.List;
 
-import com.brpan.bean.*;
+import com.brpan.bean.User;
+
 
 public interface UserDao {
 	
 	public boolean FoundUser(String user_name);
 	
-	public ArrayList<User> ListAllUsers();
+	public List<User> ListAllUsers();
 
 }

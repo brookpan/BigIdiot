@@ -1,6 +1,17 @@
 package com.brpan.bean;
 
-public class User {
+import java.io.Serializable;
+
+import javax.persistence.Table;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
+
+@Entity
+@Table(name="T_USER")
+public class User implements Serializable {
 	
 	private Integer user_id;
 	private String user_name;
@@ -24,6 +35,8 @@ public class User {
 		this.user_status = user_status;
 	}
 
+	@Id
+	@Column(name="USER_ID")
 	public Integer getUser_id() {
 		return user_id;
 	}
@@ -32,6 +45,7 @@ public class User {
 		this.user_id = user_id;
 	}
 
+	@Column(name="USER_NAME")
 	public String getUser_name() {
 		return user_name;
 	}
@@ -40,6 +54,7 @@ public class User {
 		this.user_name = user_name;
 	}
 
+	@Column(name="USER_NICK")
 	public String getUser_nick() {
 		return user_nick;
 	}
@@ -48,6 +63,7 @@ public class User {
 		this.user_nick = user_nick;
 	}
 
+	@Column(name="USER_PWD")
 	public String getUser_pwd() {
 		return user_pwd;
 	}
@@ -56,6 +72,7 @@ public class User {
 		this.user_pwd = user_pwd;
 	}
 
+	@Column(name="USER_TYPE_ID")
 	public Integer getUser_type_id() {
 		return user_type_id;
 	}
@@ -64,6 +81,7 @@ public class User {
 		this.user_type_id = user_type_id;
 	}
 
+	@Column(name="USER_IMAGE")
 	public String getUser_image() {
 		return user_image;
 	}
@@ -72,6 +90,7 @@ public class User {
 		this.user_image = user_image;
 	}
 
+	@Column(name="USER_STATUS")
 	public Integer getUser_status() {
 		return user_status;
 	}
