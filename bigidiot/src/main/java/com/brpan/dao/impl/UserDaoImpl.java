@@ -48,6 +48,9 @@ public class UserDaoImpl implements UserDao {
 	      }finally {
 	         session.close(); 
 	      }	
+	      
+	      HibernateUtil.close(session);
+	      HibernateUtil.closeSessionFactory();
 		
 		return rtusers;
 	}
