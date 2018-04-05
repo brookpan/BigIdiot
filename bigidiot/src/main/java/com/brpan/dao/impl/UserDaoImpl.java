@@ -20,13 +20,23 @@ public class UserDaoImpl implements UserDao {
 	private Session session;
 	
 	public UserDaoImpl() {
-		this.session = HibernateUtil.getSession();
+//		this.session = HibernateUtil.getSession();
 	}
 
 	@Override
 	public boolean FoundUser(String user_name) {
 		// TODO Auto-generated method stub
+		this.session = HibernateUtil.getSession();
 		
+		List<User> userlist = ListAllUsers();
+		
+		for(User user:userlist) {
+			
+			if(user_name.equals(user.getUser_name())) {
+				return true;
+			}
+			
+		}
 		
 		return false;
 	}
@@ -34,6 +44,8 @@ public class UserDaoImpl implements UserDao {
 	@Override
 	public List<User> ListAllUsers() {
 		// TODO Auto-generated method stub
+		
+		this.session = HibernateUtil.getSession();
 		
 		List<User> rtusers = new ArrayList<User>();
 		
@@ -50,7 +62,7 @@ public class UserDaoImpl implements UserDao {
 	      }	
 	      
 	      HibernateUtil.close(session);
-	      HibernateUtil.closeSessionFactory();
+//	      HibernateUtil.closeSessionFactory();
 		
 		return rtusers;
 	}
@@ -63,6 +75,8 @@ public class UserDaoImpl implements UserDao {
 			
 			System.out.println("User ID: "+user.getUser_id());
 			System.out.println("User Name: "+user.getUser_name());
+			
+			System.out.println("Existed User brook.pan: "+ ud.FoundUser("brook.pan"));
 		}
 		
 	}
